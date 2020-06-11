@@ -1,3 +1,5 @@
+/* HEADER */
+
 /* RESET  - resetea los estilos por defecto del navegador */
 
 html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, img, small, 
@@ -29,4 +31,45 @@ h6 { font-size: 0.7em; }
 
 li {
     list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HEADER */
+
+.Header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #091c3b;
+	padding: .5rem 1rem;
+	max-width: 100vw;
+}
+
+.Header a {
+	color: whitesmoke;
+}
+
+.Header__menu {
+	display: flex;
+}
+
+.Header__menu-li {
+	margin-left: 3rem;
+}
+
+.Header__menu-a:hover {
+	color: #78fee9;
+}
+
+
+
+
+
+
+.colores {
+    color: #78fee9;
+    color: #091c3b; /* background header */
 }
