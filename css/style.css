@@ -1,4 +1,5 @@
 /* HEADER */
+/* HEADER SUBMENU*/
 
 /* RESET  - resetea los estilos por defecto del navegador */
 
@@ -13,7 +14,7 @@ footer, header, menu, nav, section, audio, video, main {
 
 html {
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -63,6 +64,75 @@ a {
 .Header__menu-a:hover {
 	color: #78fee9;
 }
+
+
+/* HEADER SUBMENU*/
+
+.Header__open-submenu {
+    position: relative;
+}
+
+.Header__submenu {
+    border-left: 1px solid #78fee9;
+    border-right: 1px solid #78fee9;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: #091c3b;
+    border-radius: 3px;
+    top: 1.2rem;
+    left: -1.5rem;
+    z-index: 2;
+}
+
+
+.Header__open-submenu:hover .Header__submenu {
+    height: 140px;
+    border-bottom: 1px solid #78fee9;
+}
+
+
+.Header__submenu-li {
+    padding: .5rem;
+    text-align: center;
+    position: relative;
+}
+
+.titletext {
+    background-color: #78fee9;
+    color: black;
+    width: 130px;
+    text-align: center;
+    position: absolute;
+    left: 90%;
+    top: 2px;
+    padding: 5px 3px;
+    border-radius: 6px;
+    visibility: hidden;
+    font-size: 85%;
+}
+
+.Header__submenu:hover {
+    overflow: visible;
+}
+  
+.title:hover .titletext {
+    visibility: visible;
+}
+
+.Header__submenu-a:hover {
+    color: #78fee9;
+}
+
+.no-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+.Header__check {
+    display: none
+}
+
 
 
 
