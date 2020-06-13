@@ -1,5 +1,15 @@
 /* HEADER */
 /* HEADER SUBMENU*/
+/* MAIN */
+/* SLIDER */
+/* SLIDES--2 */
+/* SLIDES--3 */
+
+/* BUTTONS */
+
+/* ICONOS */
+/* COLORES */
+
 
 /* RESET  - resetea los estilos por defecto del navegador */
 
@@ -15,6 +25,7 @@ footer, header, menu, nav, section, audio, video, main {
 html {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
 }
 
 
@@ -133,13 +144,266 @@ a {
     display: none
 }
 
+/* MAIN */
+
+.MainIndex {
+    width: 70%;
+}
+
+/* SLIDER */
+
+.Slides {
+    background-color: #060e23;
+    overflow: hidden; /* para que no rebalse el contenido */
+}
+
+.Slides__slide {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height : 400px;
+    padding: .5rem;
+    border: 1px solid white;
+}
+
+.Slides__header {
+	display: flex;
+	align-items: center;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.Slides__header h2 {
+	font-weight: 400;
+	font-size: 2.5rem;
+	text-shadow: 2px 3px rgb(204, 204, 204, .5);
+}
+
+.Slides__header p {
+	color: #78fee9;
+	font-style: oblique;
+	margin-left: 1rem;
+	font-size: 2rem;
+}
+
+.Slides__body {
+	align-self: center;
+}
+
+.Slides__body h3 {
+	font-size: 4rem;
+	font-weight: 300;
+	color: #0f86f7;
+}
+
+.Slides__body span {
+	font-size: 3rem;
+    margin-left: 1rem;
+}
+
+.Slides__footer {
+	display: flex;
+	align-items: center;
+	align-self: flex-end;
+}
+
+.Slides__footer h4 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	margin-right: .5rem;
+}
+
+/* SLIDES--2 */
+
+.Slides--2 .Slides__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 90%;
+	height: 100%;
+}
+
+.Slides__body article {
+	display: flex;
+	align-items: center;
+	width: 500px;
+}
+
+.Slides__body article:nth-child(2) {
+	align-self: flex-end
+}
+
+.Slides__body h2 {
+	color: #78fee9;
+	font-weight: 400;
+	font-size: 2rem;
+	text-shadow: 2px 2px rgb(204, 204, 204, .5);
+}
+
+.Slides__body p {
+	font-weight: 300;
+}
+
+.Slides__body img {
+	margin-right: 1rem;
+}
+
+/* SLIDES--3 */
+
+.Slides--3 article>h2 { /* http */
+	color: whitesmoke;
+	font-weight: 500;
+	font-size: 3.5rem;
+	margin-right: .5rem;
+	text-shadow: 4px 5px rgb(204, 204, 204, .5);
+}
+
+
+
+/* BUTTONS */   
+
+.button {
+	font-weight: 500;
+	border-radius: 3px;
+	border: 2px solid #78fee9;
+	color: whitesmoke;
+	margin-left: 1rem;
+	padding: .5rem;
+	transition: 0.3s ease;
+}
+
+.button:hover {
+	background-color: #78fee9;
+	color: black;
+}
+
+.button--blue {
+	border: 2px solid #0f86f7;
+}
+
+.button--blue:hover {
+	background-color: #0f86f7;
+}
+
+
+
+/* ICONOS */
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?pz44ej');
+    src:  url('../fonts/icomoon.eot?pz44ej#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?pz44ej') format('truetype'),
+      url('../fonts/icomoon.woff?pz44ej') format('woff'),
+      url('../fonts/icomoon.svg?pz44ej#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-hbs:before {
+    content: "\e900";
+  }
+  .icon-css3:before {
+    content: "\e901";
+    color: #1572b6;
+  }
+  .icon-facebook:before {
+    content: "\e902";
+    color: #1877f2;
+  }
+  .icon-git:before {
+    content: "\e903";
+    color: #f05032;
+  }
+  .icon-github:before {
+    content: "\e904";
+  }
+  .icon-html5:before {
+    content: "\e905";
+    color: #e34f26;
+  }
+  .icon-instagram:before {
+    content: "\e906";
+    color: #e4405f;
+  }
+  .icon-javascript:before {
+    content: "\e907";
+    color: #f7df1e;
+  }
+  .icon-mongodb:before {
+    content: "\e909";
+    color: #47a248;
+  }
+  .icon-node-dot-js:before {
+    content: "\e90a";
+    color: #393;
+  }
+  .icon-sass:before {
+    content: "\e90b";
+    color: #c69;
+  }
+  .icon-twitter:before {
+    content: "\e90c";
+    color: #1da1f2;
+  }
+  .icon-webpack:before {
+    content: "\e90d";
+    color: #8dd6f9;
+  }
+  .icon-whatsapp:before {
+    content: "\e90e";
+    color: #25d366;
+  }
+  .icon-youtube:before {
+    content: "\e90f";
+    color: #f00;
+  }
+  .icon-pencil:before {
+    content: "\e910";
+  }
+  .icon-folder-open:before {
+    content: "\e930";
+  }
+  .icon-users:before {
+    content: "\e972";
+  }
+  .icon-clipboard:before {
+    content: "\e9b8";
+  }
 
 
 
 
 
+
+
+
+
+
+
+
+
+  
+/* COLORES */
 
 .colores {
     color: #78fee9;
-    color: #091c3b; /* background header */
+    color: #091c3b; /* azul claro */
+    color: #060e23; /* azul oscuro */
 }
