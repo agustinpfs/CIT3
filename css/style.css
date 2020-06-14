@@ -153,8 +153,23 @@ a {
 /* SLIDER */
 
 .Slides {
+	  position: relative;
     background-color: #060e23;
     overflow: hidden; /* para que no rebalse el contenido */
+}
+
+.Slides__prev, .Slides__next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	padding: 16px;
+	color: #0f86f7;
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+.Slides__next {
+	right: 0;
 }
 
 .Slides__slide {
