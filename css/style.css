@@ -5,6 +5,7 @@
 /* SLIDES--2 */
 /* SLIDES--3 */
 /* DESCRIPTION */
+/* FEATURES */
 /* BUTTONS */
 /* ICONOS */
 /* COLORES */
@@ -310,6 +311,41 @@ a {
 	margin-top: 2rem;
 	font-size: 1.5rem;
 	font-weight: 100;
+}
+
+/* FEATURES */
+
+.Features {
+	display: flex;
+	justify-content: space-around;
+	background-color: #060e23;
+	padding-bottom: 7rem;
+	padding-top: 6rem;
+	text-align: center;
+	position: relative;
+}
+
+.Features__article {
+	width: 25%;
+}
+
+.Features__article h4 {
+	font-size: 1.7rem;
+	border-bottom: 3px solid #78fee9;
+	margin-top: 2rem;
+  font-weight: 400;
+  padding-bottom: .5rem;
+	margin-bottom: 1rem;
+}
+
+.Features__article p {
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+.Features span {
+	color: #78fee9;
+	font-size: 2.5rem;
 }
 
 /* BUTTONS */
