@@ -4,30 +4,23 @@
 /* SLIDER */
 /* SLIDES--2 */
 /* SLIDES--3 */
-
 /* BUTTONS */
-
 /* ICONOS */
 /* COLORES */
-
-
 /* RESET  - resetea los estilos por defecto del navegador */
 
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, img, small, 
-strong, center, ul, li, form, label, article, aside, figure, figcaption, 
-footer, header, menu, nav, section, audio, video, main {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, img, small, strong, center, ul, li, form, label, article, aside, figure, figcaption, footer, header, menu, nav, section, audio, video, main {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 html {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
 }
-
 
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
@@ -36,389 +29,409 @@ h4 { font-size: 1em; }
 h5 { font-size: 0.8em; }
 h6 { font-size: 0.7em; }
 
-
 .button, a, a:focus {
-    outline: none;
+  outline: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* HEADER */
 
 .Header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #091c3b;
-	padding: .5rem 1rem;
-	max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #091c3b;
+  padding: .5rem 1rem;
+  max-width: 100vw;
 }
 
 .Header a {
-	color: whitesmoke;
+  color: whitesmoke;
 }
 
 .Header__menu {
-	display: flex;
+  display: flex;
 }
 
 .Header__menu-li {
-	margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 .Header__menu-a:hover {
-	color: #78fee9;
+  color: #78fee9;
 }
-
 
 /* HEADER SUBMENU*/
 
 .Header__open-submenu {
-    position: relative;
+  position: relative;
 }
 
 .Header__submenu {
-    border-left: 1px solid #78fee9;
-    border-right: 1px solid #78fee9;
-    height: 0;
-    overflow: hidden;
-    position: absolute;
-    background-color: #091c3b;
-    border-radius: 3px;
-    top: 1.2rem;
-    left: -1.5rem;
-    z-index: 2;
+  border-left: 1px solid #78fee9;
+  border-right: 1px solid #78fee9;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  background-color: #091c3b;
+  border-radius: 3px;
+  top: 1.2rem;
+  left: -1.5rem;
+  z-index: 2;
 }
-
 
 .Header__open-submenu:hover .Header__submenu {
-    height: 140px;
-    border-bottom: 1px solid #78fee9;
+  height: 140px;
+  border-bottom: 1px solid #78fee9;
 }
 
-
 .Header__submenu-li {
-    padding: .5rem;
-    text-align: center;
-    position: relative;
+  padding: .5rem;
+  text-align: center;
+  position: relative;
 }
 
 .titletext {
-    background-color: #78fee9;
-    color: black;
-    width: 130px;
-    text-align: center;
-    position: absolute;
-    left: 90%;
-    top: 2px;
-    padding: 5px 3px;
-    border-radius: 6px;
-    visibility: hidden;
-    font-size: 85%;
+  background-color: #78fee9;
+  color: black;
+  width: 130px;
+  text-align: center;
+  position: absolute;
+  left: 90%;
+  top: 2px;
+  padding: 5px 3px;
+  border-radius: 6px;
+  visibility: hidden;
+  font-size: 85%;
 }
 
 .Header__submenu:hover {
-    overflow: visible;
+  overflow: visible;
 }
-  
+
 .title:hover .titletext {
-    visibility: visible;
+  visibility: visible;
 }
 
 .Header__submenu-a:hover {
-    color: #78fee9;
+  color: #78fee9;
 }
 
 .no-link {
-    pointer-events: none;
-    cursor: default;
+  pointer-events: none;
+  cursor: default;
 }
 
 .Header__check {
-    display: none
+  display: none
 }
 
 /* MAIN */
 
 .MainIndex {
-    width: 70%;
+  width: 70%;
 }
 
 /* SLIDER */
 
 .Slides {
-	  position: relative;
-    background-color: #060e23;
-    overflow: hidden; /* para que no rebalse el contenido */
+  position: relative;
+  background-color: #060e23;
+  overflow: hidden;
+  /* para que no rebalse el contenido */
 }
 
 .Slides__prev, .Slides__next {
-	cursor: pointer;
-	position: absolute;
-	top: 40%;
-	padding: 16px;
-	color: #0f86f7;
-	font-weight: 500;
-	font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #0f86f7;
+  font-weight: 500;
+  font-size: 3rem;
+  animation: mymove 2s;
+  animation-iteration-count: infinite;
 }
 
 .Slides__next {
-	right: 0;
+  right: 0;
+}
+
+@keyframes mymove {
+  0%   { opacity: 1;}
+  30%  { opacity: .1;}
+  40%  { opacity: .1;}
+  100% { opacity: 1;}
+}
+
+.Slide__js {
+	animation-name: Slide__js;
+	animation-duration: 2s;
+}
+
+@keyframes Slide__js {
+	from {
+		opacity: .2
+	}
+	to {
+		opacity: 1
+	}
 }
 
 .Slides__slide {
-    display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height : 400px;
-    padding: .5rem;
-    border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  padding: .5rem;
 }
 
 .Slides__header {
-	display: flex;
-	align-items: center;
-    margin-top: .5rem;
-    margin-left: .5rem;
+  display: flex;
+  align-items: center;
+  margin-top: .5rem;
+  margin-left: .5rem;
 }
 
 .Slides__header h2 {
-	font-weight: 400;
-	font-size: 2.5rem;
-	text-shadow: 2px 3px rgb(204, 204, 204, .5);
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-shadow: 2px 3px rgb(204, 204, 204, .5);
 }
 
 .Slides__header p {
-	color: #78fee9;
-	font-style: oblique;
-	margin-left: 1rem;
-	font-size: 2rem;
+  color: #78fee9;
+  font-style: oblique;
+  margin-left: 1rem;
+  font-size: 2rem;
 }
 
 .Slides__body {
-	align-self: center;
+  align-self: center;
 }
 
 .Slides__body h3 {
-	font-size: 4rem;
-	font-weight: 300;
-	color: #0f86f7;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #0f86f7;
 }
 
 .Slides__body span {
-	font-size: 3rem;
-    margin-left: 1rem;
+  font-size: 3rem;
+  margin-left: 1rem;
 }
 
 .Slides__footer {
-	display: flex;
-	align-items: center;
-	align-self: flex-end;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
 }
 
 .Slides__footer h4 {
-	font-size: 1.5rem;
-	font-weight: 300;
-	margin-right: .5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-right: .5rem;
 }
 
 /* SLIDES--2 */
 
 .Slides--2 .Slides__body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 90%;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  height: 100%;
 }
 
 .Slides__body article {
-	display: flex;
-	align-items: center;
-	width: 500px;
+  display: flex;
+  align-items: center;
+  width: 500px;
 }
 
 .Slides__body article:nth-child(2) {
-	align-self: flex-end
+  align-self: flex-end
 }
 
 .Slides__body h2 {
-	color: #78fee9;
-	font-weight: 400;
-	font-size: 2rem;
-	text-shadow: 2px 2px rgb(204, 204, 204, .5);
+  color: #78fee9;
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: 2px 2px rgb(204, 204, 204, .5);
 }
 
 .Slides__body p {
-	font-weight: 300;
+  font-weight: 300;
 }
 
 .Slides__body img {
-	margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 /* SLIDES--3 */
 
-.Slides--3 article>h2 { /* http */
-	color: whitesmoke;
-	font-weight: 500;
-	font-size: 3.5rem;
-	margin-right: .5rem;
-	text-shadow: 4px 5px rgb(204, 204, 204, .5);
+.Slides--3 article>h2 {
+  /* http */
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 3.5rem;
+  margin-right: .5rem;
+  text-shadow: 4px 5px rgb(204, 204, 204, .5);
 }
 
-
-
-/* BUTTONS */   
+/* BUTTONS */
 
 .button {
-	font-weight: 500;
-	border-radius: 3px;
-	border: 2px solid #78fee9;
-	color: whitesmoke;
-	margin-left: 1rem;
-	padding: .5rem;
-	transition: 0.3s ease;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 2px solid #78fee9;
+  color: whitesmoke;
+  margin-left: 1rem;
+  padding: .5rem;
+  transition: 0.3s ease;
 }
 
 .button:hover {
-	background-color: #78fee9;
-	color: black;
+  background-color: #78fee9;
+  color: black;
 }
 
 .button--blue {
-	border: 2px solid #0f86f7;
+  border: 2px solid #0f86f7;
 }
 
 .button--blue:hover {
-	background-color: #0f86f7;
+  background-color: #0f86f7;
 }
-
-
 
 /* ICONOS */
 
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?pz44ej');
-    src:  url('../fonts/icomoon.eot?pz44ej#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?pz44ej') format('truetype'),
-      url('../fonts/icomoon.woff?pz44ej') format('woff'),
-      url('../fonts/icomoon.svg?pz44ej#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-hbs:before {
-    content: "\e900";
-  }
-  .icon-css3:before {
-    content: "\e901";
-    color: #1572b6;
-  }
-  .icon-facebook:before {
-    content: "\e902";
-    color: #1877f2;
-  }
-  .icon-git:before {
-    content: "\e903";
-    color: #f05032;
-  }
-  .icon-github:before {
-    content: "\e904";
-  }
-  .icon-html5:before {
-    content: "\e905";
-    color: #e34f26;
-  }
-  .icon-instagram:before {
-    content: "\e906";
-    color: #e4405f;
-  }
-  .icon-javascript:before {
-    content: "\e907";
-    color: #f7df1e;
-  }
-  .icon-mongodb:before {
-    content: "\e909";
-    color: #47a248;
-  }
-  .icon-node-dot-js:before {
-    content: "\e90a";
-    color: #393;
-  }
-  .icon-sass:before {
-    content: "\e90b";
-    color: #c69;
-  }
-  .icon-twitter:before {
-    content: "\e90c";
-    color: #1da1f2;
-  }
-  .icon-webpack:before {
-    content: "\e90d";
-    color: #8dd6f9;
-  }
-  .icon-whatsapp:before {
-    content: "\e90e";
-    color: #25d366;
-  }
-  .icon-youtube:before {
-    content: "\e90f";
-    color: #f00;
-  }
-  .icon-pencil:before {
-    content: "\e910";
-  }
-  .icon-folder-open:before {
-    content: "\e930";
-  }
-  .icon-users:before {
-    content: "\e972";
-  }
-  .icon-clipboard:before {
-    content: "\e9b8";
-  }
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?pz44ej');
+  src: url('../fonts/icomoon.eot?pz44ej#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?pz44ej') format('truetype'), url('../fonts/icomoon.woff?pz44ej') format('woff'), url('../fonts/icomoon.svg?pz44ej#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
+.icon-hbs:before {
+  content: "\e900";
+}
 
+.icon-css3:before {
+  content: "\e901";
+  color: #1572b6;
+}
 
+.icon-facebook:before {
+  content: "\e902";
+  color: #1877f2;
+}
 
+.icon-git:before {
+  content: "\e903";
+  color: #f05032;
+}
 
+.icon-github:before {
+  content: "\e904";
+}
 
+.icon-html5:before {
+  content: "\e905";
+  color: #e34f26;
+}
 
+.icon-instagram:before {
+  content: "\e906";
+  color: #e4405f;
+}
 
+.icon-javascript:before {
+  content: "\e907";
+  color: #f7df1e;
+}
 
+.icon-mongodb:before {
+  content: "\e909";
+  color: #47a248;
+}
 
+.icon-node-dot-js:before {
+  content: "\e90a";
+  color: #393;
+}
 
+.icon-sass:before {
+  content: "\e90b";
+  color: #c69;
+}
 
-  
+.icon-twitter:before {
+  content: "\e90c";
+  color: #1da1f2;
+}
+
+.icon-webpack:before {
+  content: "\e90d";
+  color: #8dd6f9;
+}
+
+.icon-whatsapp:before {
+  content: "\e90e";
+  color: #25d366;
+}
+
+.icon-youtube:before {
+  content: "\e90f";
+  color: #f00;
+}
+
+.icon-pencil:before {
+  content: "\e910";
+}
+
+.icon-folder-open:before {
+  content: "\e930";
+}
+
+.icon-users:before {
+  content: "\e972";
+}
+
+.icon-clipboard:before {
+  content: "\e9b8";
+}
+
 /* COLORES */
 
 .colores {
-    color: #78fee9;
-    color: #091c3b; /* azul claro */
-    color: #060e23; /* azul oscuro */
+  color: #78fee9;
+  color: #091c3b;
+  /* azul claro */
+  color: #060e23;
+  /* azul oscuro */
 }
