@@ -4,6 +4,7 @@
 /* SLIDER */
 /* SLIDES--2 */
 /* SLIDES--3 */
+/* DESCRIPTION */
 /* BUTTONS */
 /* ICONOS */
 /* COLORES */
@@ -287,6 +288,30 @@ a {
   text-shadow: 4px 5px rgb(204, 204, 204, .5);
 }
 
+
+/* DESCRIPTION */
+
+.Description {
+  background-color: #091c3b;
+  padding: 3rem 5rem;
+	position: relative;
+}
+
+.Description h2 {
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+.Description span{
+  color: #78fee9;
+}
+
+.Description p {
+	margin-top: 2rem;
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
 /* BUTTONS */
 
 .button {
@@ -310,6 +335,12 @@ a {
 
 .button--blue:hover {
   background-color: #0f86f7;
+}
+
+.button--inf {
+	position: absolute;
+	bottom: .5rem;
+	right: .5rem;
 }
 
 /* ICONOS */
@@ -430,8 +461,6 @@ a {
 
 .colores {
   color: #78fee9;
-  color: #091c3b;
-  /* azul claro */
-  color: #060e23;
-  /* azul oscuro */
+  color: #091c3b;  /* azul claro */
+  color: #060e23;  /* azul oscuro */
 }
