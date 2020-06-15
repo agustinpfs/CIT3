@@ -6,9 +6,12 @@
 /* SLIDES--3 */
 /* DESCRIPTION */
 /* FEATURES */
+/* FOOTER  */
 /* BUTTONS */
 /* ICONOS */
 /* COLORES */
+
+
 /* RESET  - resetea los estilos por defecto del navegador */
 
 html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, img, small, strong, center, ul, li, form, label, article, aside, figure, figcaption, footer, header, menu, nav, section, audio, video, main {
@@ -348,6 +351,38 @@ a {
 	font-size: 2.5rem;
 }
 
+/* FOOTER  */
+
+.Footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #060e23;
+	color: whitesmoke;
+	padding: 2.5rem .5rem;
+}
+
+.Footer nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.Footer-nav a {
+	color: #0f86f7;
+	text-decoration: underline;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	font-size: 1rem;
+}
+
+.Footer-social {
+	font-size: 1.5rem;
+}
+
+.Footer-social span {
+	margin-right: 1rem;
+}
+
 /* BUTTONS */
 
 .button {
@@ -425,6 +460,7 @@ a {
 
 .icon-github:before {
   content: "\e904";
+  color: white;
 }
 
 .icon-html5:before {
