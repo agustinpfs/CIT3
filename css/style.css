@@ -10,6 +10,7 @@
 /* ARTICLES BLOG */
 /* ASIDE */
 /* TABS */
+/* ACORDEON */
 /* FOOTER  */
 /* BUTTONS */
 /* ICONOS */
@@ -520,6 +521,48 @@ a {
 
 .Tabs__content li {
 	margin: .5rem;
+}
+
+
+/* ACORDEON */
+
+.Acordeon h2 {
+  padding: .5rem;
+	font-weight: 400;
+}
+
+.Acordeon__button {
+	background-color: #060e23;
+	color: #78fee9;
+	border: 1px solid #78fee9;
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	font-size: 1.2rem;
+	transition: 0.4s;
+}
+
+.Acordeon__button.activo, .Acordeon__button:hover {
+	color: #0f86f7;
+	border: 1px solid #0f86f7;
+}
+
+.Acordeon__button:after {
+	content: '\002B';
+	color: #00bdff;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.Acordeon__button.activo:after {
+	content: "\2212";
+}
+
+.Acordeon__contenido {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
 
 /* FOOTER  */

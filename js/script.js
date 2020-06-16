@@ -39,3 +39,24 @@ function changeContent(evento, contenidoDeUnTab) {
   evento.target.className += " active";
 
 }
+
+
+// ACCORDION
+
+let acordeonButtons = document.getElementsByClassName("Acordeon__button");
+let i;
+
+for (i = 0; i < acordeonButtons.length; i++) {
+  acordeonButtons[i].onclick = function() {
+    this.classList.toggle("activo");
+    let contenido = this.nextElementSibling;
+    console.log(this.nextElementSibling, "nextSibl");
+    
+    if (contenido.style.maxHeight){
+      contenido.style.maxHeight = null;
+    } else {
+      contenido.style.maxHeight = contenido.scrollHeight + "px";
+    } 
+  }
+}
+document.getElementById("activado").click();
