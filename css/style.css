@@ -25,6 +25,8 @@ html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
+  background-color: #091c3b;
+	scroll-behavior: smooth;
 }
 
 h1 {
@@ -69,7 +71,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #091c3b;
   padding: .5rem 1rem;
   max-width: 100vw;
 }
@@ -320,7 +321,6 @@ a {
 /* DESCRIPTION */
 
 .Description {
-  background-color: #091c3b;
   padding: 3rem 5rem;
   position: relative;
 }
@@ -378,7 +378,6 @@ a {
 /* ARTICLES */
 
 .Articles {
-  background-color: #091c3b;
   padding-top: 2rem;
 }
 
@@ -683,8 +682,6 @@ a {
 
 .colores {
   color: #78fee9;
-  color: #091c3b;
-  /* azul claro */
-  color: #060e23;
-  /* azul oscuro */
+  color: #091c3b;  /* azul claro */
+  color: #060e23;  /* azul oscuro */
 }
