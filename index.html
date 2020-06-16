@@ -228,9 +228,62 @@
             </div>
         </section>    
     </main>
-    <aside>
-        <section>tabs</section>
-        <section>social widget</section>
+    <aside class="Aside">
+        <section class="Tabs">
+            <ul class="Tabs__header">
+                <li class="Tabs__tab" onclick="changeContent(event, 'contenidoTab1')" id="activo">Abierto</li>
+                <li class="Tabs__tab" onclick="changeContent(event, 'contenidoTab2')">Próximo</li>
+                <li class="Tabs__tab" onclick="changeContent(event, 'contenidoTab3')">Futuros</li>
+            </ul>
+
+            <!-- contenido pestaña1 -->
+            <div id="contenidoTab1" class="Tabs__content">
+                <h2>
+                    HTML<span class="icon-html5"></span>
+                    CSS<span class="icon-css3"></span>
+                    JavaScript<span class="icon-javascript"></span>
+                </h2>
+
+                <ul>
+                    <li class="green">Además:</li>
+                    <li><span class="green">&#10003;</span> Git-Github</li>
+                    <li><span class="green">&#10003;</span> Gestión de proyectos</li>
+                    <li><span class="green">&#10003;</span> Despliegue</li>
+                    <li><span class="green">&#10003;</span> Analítica web</li>
+                </ul>
+                <a href="curso.html" class="button button--blue button--inf">VER CURSO</a>
+            </div>
+
+            <!-- contenido pestaña2 -->
+            <div id="contenidoTab2" class="Tabs__content">
+                <h2>
+                    Webpack<span class="icon-webpack"></span>
+                    Sass<span class="icon-sass"></span>
+                    Handlebars<span class="icon-hbs"></span>
+                </h2>
+                <ul>
+                    <li><span class="green">&#10003;</span> Sistema de bundling</li>
+                    <li><span class="green">&#10003;</span> Automatización de procesos</li>
+                    <li><span class="green">&#10003;</span> Preprocesadores CSS</li>
+                    <li><span class="green">&#10003;</span> Motores de plantillas</li>
+                </ul>
+            </div>
+
+            <!-- contenido pestaña3 -->
+            <div id="contenidoTab3" class="Tabs__content">
+                <ul>
+                    <li><span class="green">&#8226;</span> NodeJS, Express, MongoDB</li>
+                    <li><span class="green">&#8226;</span> Progressive web app</li>
+                    <li><span class="green">&#8226;</span> React</li>
+                    <li><span class="green">&#8226;</span> React Native</li>
+                    <li><span class="green">&#8226;</span> VueJS</li>
+                    <li><span class="green">&#8226;</span> Electron</li>
+                </ul>
+            </div>
+        </section>
+        <section class="Twitter">
+            <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/cursosit_ok?ref_src=twsrc%5Etfw">Tweets by cursosit_ok</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
         <section>acordeón</section>
     </aside>
     <footer class="Footer">

@@ -8,6 +8,8 @@
 /* FEATURES */
 /* ARTICLES */
 /* ARTICLES BLOG */
+/* ASIDE */
+/* TABS */
 /* FOOTER  */
 /* BUTTONS */
 /* ICONOS */
@@ -144,6 +146,8 @@ a {
 
 .MainIndex {
   width: 70%;
+  display: inline-block;
+	vertical-align: top;
 }
 
 /* SLIDER */
@@ -473,6 +477,51 @@ a {
   font-weight: 300;
 }
 
+/* ASIDE */
+.Aside {
+	width: 29%;
+	display: inline-block;
+}
+
+/* TABS */
+
+.Tabs__header {
+	display: flex;
+	/* overflow: hidden; */
+	/* background-color: #091c3b; */
+	cursor: pointer;
+}
+
+.Tabs__tab {
+	border: 1px solid #0f86f7;
+	color: #0f86f7;
+	font-size: 1.1rem;
+	margin-left: 3px;
+	padding: .5rem 0;
+	text-align: center;
+	transition: 0.3s;
+	width: 33%;
+}
+
+.Tabs__tab:hover, .active {
+	background-color: #0f86f7;
+	color: #060e23;
+}
+
+.Tabs__content {
+	position: relative;
+	padding: 1.5rem 1rem;
+	background-color: #091c3b;
+}
+
+.Tabs__content h2 {
+	margin-bottom: 1.5rem;
+}
+
+.Tabs__content li {
+	margin: .5rem;
+}
+
 /* FOOTER  */
 
 .Footer {
@@ -673,4 +722,8 @@ a {
   color: #78fee9;
   color: #091c3b;  /* azul claro */
   color: #060e23;  /* azul oscuro */
+}
+
+.green {
+  color: #78fee9;
 }
