@@ -399,6 +399,8 @@ a {
   width: 280px;
   position: relative;
   border: 1px solid #0f86f7;
+  height: 270px;
+  overflow: hidden;
 }
 
 .Articles img {
@@ -423,6 +425,7 @@ a {
   cursor: pointer;
   top: 0;
 }
+
 
 .Articles__hover:hover {
   background-color: #091c3b;
@@ -552,7 +555,8 @@ a {
 
 .button--art {
   position: absolute;
-  width: max-content;
+  text-align: center;
+  width: 50%;
   bottom: .5rem;
   right: 0;
   left: 0;
