@@ -13,6 +13,7 @@
 /* ACORDEON */
 /* FOOTER  */
 /* MODAL */
+/* MODAL ANIMACIÓN */
 /* FORMS */
 /* BUTTONS */
 /* ICONOS */
@@ -607,7 +608,9 @@ a {
 /* MODAL */
 
 .Modal {
-	display: none;
+  display: none;
+  animation-name: showForm;
+	animation-duration: .5s
 }
 
 .Modal__content {
@@ -659,6 +662,18 @@ a {
 .Modal textarea {
 	height: 40vh;
 }
+
+/* MODAL ANIMACIÓN */
+
+@keyframes showForm {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
 
 /* BUTTONS */
 
