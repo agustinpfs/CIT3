@@ -12,6 +12,8 @@
 /* TABS */
 /* ACORDEON */
 /* FOOTER  */
+/* MODAL */
+/* FORMS */
 /* BUTTONS */
 /* ICONOS */
 /* COLORES */
@@ -602,6 +604,62 @@ a {
   margin-right: 1rem;
 }
 
+/* MODAL */
+
+.Modal {
+	/* display: none; */
+}
+
+.Modal-content {
+	border: 1px solid #78fee9;
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	height: 90%;
+	background-color: #060e23;
+	width: 50%;
+}
+
+.Modal-close {
+	color: #78fee9;
+	position: absolute;
+	bottom: 0;
+	right: 1rem;
+	font-size: 3rem;
+}
+
+.Modal-close:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+/* FORMS */
+
+.Form input, .Form textarea {
+	display: block;
+	padding: .2rem .5rem;
+	width: 80%;
+	margin: .5rem auto;
+	font-size: 1.1rem;
+	border: 1px solid #78fee9;
+	color: whitesmoke;
+	background-color: #060e23;
+	font-weight: 400;
+}
+
+.Modal form {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.Modal textarea {
+	height: 40vh;
+}
+
 /* BUTTONS */
 
 .button {
@@ -642,6 +700,12 @@ a {
   left: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.button--form {
+	background-color: black;
+	font-size: 1.2rem;
+	cursor: pointer;
 }
 
 /* ICONOS */
