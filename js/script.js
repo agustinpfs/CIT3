@@ -60,3 +60,18 @@ for (i = 0; i < acordeonButtons.length; i++) {
   }
 }
 document.getElementById("activado").click();
+
+
+
+
+// MODAL
+
+let Modal = document.getElementsByClassName("Modal")[0];
+
+let contactoHeader = document.getElementsByClassName("opencontact")[0];
+let contactoFooter = document.getElementsByClassName("opencontact2")[0];
+let cerrar = document.getElementsByClassName("Modal__close")[0];
+
+contactoHeader.onclick = () => Modal.style.display = "block";
+contactoFooter.onclick = () => Modal.style.display = "block";
+cerrar.onclick = () => Modal.style.display = "none";

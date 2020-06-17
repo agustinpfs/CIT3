@@ -607,10 +607,10 @@ a {
 /* MODAL */
 
 .Modal {
-	/* display: none; */
+	display: none;
 }
 
-.Modal-content {
+.Modal__content {
 	border: 1px solid #78fee9;
 	position: fixed;
 	left: 0;
@@ -623,7 +623,7 @@ a {
 	width: 50%;
 }
 
-.Modal-close {
+.Modal__close {
 	color: #78fee9;
 	position: absolute;
 	bottom: 0;
@@ -631,7 +631,7 @@ a {
 	font-size: 3rem;
 }
 
-.Modal-close:hover {
+.Modal__close:hover {
 	color: #fff;
 	cursor: pointer;
 }
